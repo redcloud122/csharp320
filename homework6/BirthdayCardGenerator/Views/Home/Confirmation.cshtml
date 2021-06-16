@@ -1,0 +1,42 @@
+﻿@model BirthdayCardGenerator.Models.BirthdayCard
+
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width" />
+  <title>Index</title>
+  <link rel="stylesheet" type="text/css" href="~/css/Styles.css" />
+</head>
+
+<body>
+  <header>
+    <h2>Birthday Card Generator</h2>
+  </header>
+  <div>
+    <h3>Birthday Card Sent</h3>
+
+    <dl class="dl-horizontal">
+      <dt>
+        @Html.DisplayNameFor(model => model.From):
+        @Html.DisplayFor(model => model.From)
+      </dt>
+
+      <dt>
+        @Html.DisplayNameFor(model => model.To):
+        @Html.DisplayFor(model => model.To)
+      </dt>
+
+      <dt>
+        @Html.DisplayNameFor(model => model.Message):
+        @Html.DisplayFor(model => model.Message)
+      </dt>
+    </dl>
+  </div>
+
+  <div>
+    <a asp-action="Index">Back to Card Generator Home</a>
+  </div>
+</body>
+
+</html>
